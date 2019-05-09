@@ -19,7 +19,7 @@ ifeq ($(BUILDDIR),)
 	CONFIG = /usr/local/Cellar/llvm/$(VERSION)/bin/llvm-config
 	LDFLAGS += -L/usr/local/opt/libffi/lib -lffi
 	else
-	CONFIG = llvm-config-$(VERSION_MAJOR)
+	CONFIG = llvm-config
 	endif
 else
 CONFIG=$(BUILDDIR)/bin/llvm-config
